@@ -6,5 +6,5 @@
 # Name or Organization <email address>
 
 Eben Sorkin <sorkineben@gmail.com>
-Mirko Iverson <bghryct@gmail.com>
+Mirko Velimirovic <bghryct@gmail.com>
 

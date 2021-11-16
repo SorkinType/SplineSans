@@ -1,7 +1,7 @@
 Spline Sans UI by Sorkin Type
 ===========================
 
-Spline Sans UI is an original typeface designed by Eben Sorkin and Mirko Iverson).
+Spline Sans UI is an original typeface designed by Eben Sorkin and Mirko Velimirovic).
 
 It supports Google Core, Google Plus, Google Pro, Plus Optional, and Pro optional glyph sets, enabling the typesetting of English, and Western European languages .
 
@@ -22,7 +22,7 @@ Source Files - Glyphs app file
 
 ```
 └── sources
-    ├── Spline Sans UI.glyphs	# Contains all data to build the font
+    ├── SplineSansUI[wght].glyphs	# Contains all data to build the font
 
 
 ```

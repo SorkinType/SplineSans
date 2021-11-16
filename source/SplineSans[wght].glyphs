@@ -1,5 +1,5 @@
 {
-.appVersion = "1356";
+.appVersion = "1352";
 DisplayStrings = (
 "Å/Schwa å/g.ss02.alt/g.ss02/gacute.ss02/gbreve.ss02/gcaron.ss02/gcommaaccent.ss02/gdotaccent.ss02/one.ss01/two.ss01/four.ss01/seven.ss01/one.dnom/two.dnom t/guilsinglleft t/guilsinglright t/ringcomb/ringcomb.case/bullet fangs",
 "flagging/space logging\012",
@@ -156,7 +156,7 @@ wght = {
 );
 date = "2021-11-16 15:37:25 +0000";
 designer = "Eben Sorkin, Mirko Velimirovic";
-familyName = SplineSansUI;
+familyName = SplineSans;
 featurePrefixes = (
 {
 code = "languagesystem DFLT dflt;\012\012languagesystem latn dflt;\012languagesystem latn AZE;\012languagesystem latn CRT;\012languagesystem latn KAZ;\012languagesystem latn TAT;\012languagesystem latn TRK;\012languagesystem latn ROM;\012languagesystem latn MOL;\012languagesystem latn CAT;\012languagesystem latn NLD;\012";
@@ -62718,7 +62718,7 @@ instances = (
 customParameters = (
 {
 name = preferredFamilyName;
-value = SplineSansUI;
+value = SplineSans;
 },
 {
 name = preferredSubfamilyName;
@@ -62738,7 +62738,7 @@ weightClass = Light;
 customParameters = (
 {
 name = preferredFamilyName;
-value = SplineSansUI;
+value = SplineSans;
 },
 {
 name = preferredSubfamilyName;
@@ -62757,7 +62757,7 @@ name = Regular;
 customParameters = (
 {
 name = preferredFamilyName;
-value = SplineSansUI;
+value = SplineSans;
 },
 {
 name = preferredSubfamilyName;
@@ -62778,7 +62778,7 @@ weightClass = Medium;
 customParameters = (
 {
 name = preferredFamilyName;
-value = SplineSansUI;
+value = SplineSans;
 },
 {
 name = preferredSubfamilyName;
@@ -62797,7 +62797,7 @@ weightClass = SemiBold;
 customParameters = (
 {
 name = preferredFamilyName;
-value = SplineSansUI;
+value = SplineSans;
 },
 {
 name = preferredSubfamilyName;

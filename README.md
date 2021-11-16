@@ -1,9 +1,10 @@
 Spline Sans UI by Sorkin Type
 ===========================
 
-Spline Sans UI is an original typeface designed by Eben Sorkin and Mirko Velimirovic).
+Spline Sans UI is an original typeface designed by Eben Sorkin and Mirko Velimirovic.
+Project manager Faride Mereb. Testing Gonçalo Teixeira. Concept Alejandro Pérez León.
 
-It supports Google Core, Google Plus, Google Pro, Plus Optional, and Pro optional glyph sets, enabling the typesetting of English, and Western European languages .
+Spline Sans supports Google Core, Google Plus, Google Pro, Plus Optional, and Pro optional glyph sets, enabling the typesetting of English, and Western European languages.
 
 License
 -------
@@ -27,7 +28,25 @@ Source Files - Glyphs app file
 
 ```
 
-Build Instructions - None
+Build Instructions 
 ------------------
 
 To build the font use Glyphs App and export TTF, OTF or other supported file formats.
+
+or if you do not have a copy of Glyphs please do the following.
+Open terminal (if using macos)
+
+`$ python3 -m venv venv`
+Sets up a python virtual environment
+
+`$ source venv/bin/activate`
+Turns on your virtual environment
+
+`$ pip install --upgrade pip`
+upgrades pip
+
+`$ pip install gftools`
+gives you the tools you will need to build the project
+
+then from the root of the repo 
+`$ gftools build-vf --fixnonhinting --static`

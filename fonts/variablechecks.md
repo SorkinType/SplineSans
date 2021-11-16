@@ -383,26 +383,26 @@ substitution rules. Any glyphs not accessible by either of these means are
 redundant and serve only to increase the font&#x27;s file size.</pre>
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
- - .null
- - uni030C.alt.001
- - commaturnedabove
- - uni030C.alt
+ - macronbelow
+ - g.ss02.alt
  - uni0308.001
- - ringcomba_part.
- - OSlash_part.
  - ringacutecomb
  - ij_acutecomb
- - IJ_acutecomb
- - Barmid_part.
- - slashL_part.
- - g.ss02.alt
+ - .null
  - uni0326.002
- - oSlash_part.
+ - Barmid_part.
+ - OSlash_part.
+ - slashL_part.
+ - IJ_acutecomb
+ - ringcomba_part.
  - Bar_part.
- - macronbelow
- - slashl_part.
- - dotbelow 
+ - uni030C.alt.001
  - circumflexbelow
+ - slashl_part.
+ - uni030C.alt
+ - oSlash_part.
+ - commaturnedabove 
+ - dotbelow
  [code: unreachable-glyphs]
 
 </details>
@@ -1517,8 +1517,8 @@ of hinted versus unhinted font files.</pre>
 
  |               | SplineSansUI[wght].ttf          |
  |:------------- | ---------------:|
- | Dehinted Size | 425.0kb |
- | Hinted Size   | 425.0kb   |
+ | Dehinted Size | 424.4kb |
+ | Hinted Size   | 424.5kb   |
  | Increase      | 24 bytes      |
  | Change        | 0.0 %  |
  [code: size-impact]

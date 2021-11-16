@@ -14050,17 +14050,17 @@ unicode = 017B;
 },
 {
 glyphname = G.ss02;
-lastChange = "2021-11-16 06:32:04 +0000";
+lastChange = "2021-11-16 06:58:20 +0000";
 layers = (
 {
 anchors = (
 {
 name = bottom;
-position = "{713, 0}";
+position = "{789, 0}";
 },
 {
 name = top;
-position = "{713, 1454}";
+position = "{761, 1454}";
 }
 );
 layerId = "0D9D1AFE-BAFC-449A-A530-9FCA9CDF2E2E";
@@ -14109,11 +14109,11 @@ width = 1421;
 anchors = (
 {
 name = bottom;
-position = "{705, 0}";
+position = "{757, 0}";
 },
 {
 name = top;
-position = "{705, 1454}";
+position = "{734, 1454}";
 }
 );
 layerId = "09AB1441-CF14-483D-884E-606841830E4D";
@@ -14162,11 +14162,11 @@ width = 1409;
 anchors = (
 {
 name = bottom;
-position = "{691, 0}";
+position = "{715, 0}";
 },
 {
 name = top;
-position = "{691, 1454}";
+position = "{740, 1454}";
 }
 );
 layerId = "BF6BC6F6-4B2A-4E9B-9E28-8B62B2F12FD9";
@@ -14215,11 +14215,11 @@ width = 1385;
 anchors = (
 {
 name = bottom;
-position = "{708, 0}";
+position = "{775, 0}";
 },
 {
 name = top;
-position = "{708, 1454}";
+position = "{751, 1454}";
 }
 );
 layerId = "395F81AD-17EE-4C97-A34D-220A255092E0";
@@ -14271,7 +14271,7 @@ rightKerningGroup = KO_G.ss02;
 },
 {
 glyphname = Gacute.ss02;
-lastChange = "2021-11-16 06:28:15 +0000";
+lastChange = "2021-11-16 06:58:23 +0000";
 layers = (
 {
 components = (
@@ -14280,7 +14280,7 @@ name = G.ss02;
 },
 {
 name = acutecomb.case;
-transform = "{1, 0, 0, 1, 500, 363}";
+transform = "{1, 0, 0, 1, 548, 363}";
 }
 );
 layerId = "0D9D1AFE-BAFC-449A-A530-9FCA9CDF2E2E";
@@ -14293,7 +14293,7 @@ name = G.ss02;
 },
 {
 name = acutecomb.case;
-transform = "{1, 0, 0, 1, 444, 363}";
+transform = "{1, 0, 0, 1, 473, 363}";
 }
 );
 layerId = "09AB1441-CF14-483D-884E-606841830E4D";
@@ -14306,7 +14306,7 @@ name = G.ss02;
 },
 {
 name = acutecomb.case;
-transform = "{1, 0, 0, 1, 415, 363}";
+transform = "{1, 0, 0, 1, 464, 363}";
 }
 );
 layerId = "BF6BC6F6-4B2A-4E9B-9E28-8B62B2F12FD9";
@@ -14319,7 +14319,7 @@ name = G.ss02;
 },
 {
 name = acutecomb.case;
-transform = "{1, 0, 0, 1, 465, 363}";
+transform = "{1, 0, 0, 1, 508, 363}";
 }
 );
 layerId = "395F81AD-17EE-4C97-A34D-220A255092E0";
@@ -14459,7 +14459,7 @@ rightKerningGroup = KO_Gbreve.ss02;
 },
 {
 glyphname = Gcommaaccent.ss02;
-lastChange = "2021-11-16 06:28:15 +0000";
+lastChange = "2021-11-16 06:58:23 +0000";
 layers = (
 {
 components = (
@@ -14469,7 +14469,7 @@ name = G.ss02;
 {
 alignment = 1;
 name = commaaccentcomb;
-transform = "{1, 0, 0, 1, 512, 0}";
+transform = "{1, 0, 0, 1, 588, 0}";
 }
 );
 layerId = "0D9D1AFE-BAFC-449A-A530-9FCA9CDF2E2E";
@@ -14482,7 +14482,7 @@ name = G.ss02;
 },
 {
 name = commaaccentcomb;
-transform = "{1, 0, 0, 1, 423, 0}";
+transform = "{1, 0, 0, 1, 475, 0}";
 }
 );
 layerId = "09AB1441-CF14-483D-884E-606841830E4D";
@@ -14495,7 +14495,7 @@ name = G.ss02;
 },
 {
 name = commaaccentcomb;
-transform = "{1, 0, 0, 1, 433, 0}";
+transform = "{1, 0, 0, 1, 457, 0}";
 }
 );
 layerId = "BF6BC6F6-4B2A-4E9B-9E28-8B62B2F12FD9";
@@ -14509,7 +14509,7 @@ name = G.ss02;
 {
 alignment = 1;
 name = commaaccentcomb;
-transform = "{1, 0, 0, 1, 456, 0}";
+transform = "{1, 0, 0, 1, 523, 0}";
 }
 );
 layerId = "395F81AD-17EE-4C97-A34D-220A255092E0";
@@ -14521,7 +14521,7 @@ rightKerningGroup = KO_G.ss02;
 },
 {
 glyphname = Gdotaccent.ss02;
-lastChange = "2021-11-16 06:28:15 +0000";
+lastChange = "2021-11-16 06:58:23 +0000";
 layers = (
 {
 components = (
@@ -14530,7 +14530,7 @@ name = G.ss02;
 },
 {
 name = dotaccentcomb.case;
-transform = "{1, 0, 0, 1, 488, 363}";
+transform = "{1, 0, 0, 1, 536, 363}";
 }
 );
 layerId = "0D9D1AFE-BAFC-449A-A530-9FCA9CDF2E2E";
@@ -14543,7 +14543,7 @@ name = G.ss02;
 },
 {
 name = dotaccentcomb.case;
-transform = "{1, 0, 0, 1, 432, 363}";
+transform = "{1, 0, 0, 1, 461, 363}";
 }
 );
 layerId = "09AB1441-CF14-483D-884E-606841830E4D";
@@ -14556,7 +14556,7 @@ name = G.ss02;
 },
 {
 name = dotaccentcomb.case;
-transform = "{1, 0, 0, 1, 165, 363}";
+transform = "{1, 0, 0, 1, 214, 363}";
 }
 );
 layerId = "BF6BC6F6-4B2A-4E9B-9E28-8B62B2F12FD9";
@@ -14569,7 +14569,7 @@ name = G.ss02;
 },
 {
 name = dotaccentcomb.case;
-transform = "{1, 0, 0, 1, 453, 363}";
+transform = "{1, 0, 0, 1, 496, 363}";
 }
 );
 layerId = "395F81AD-17EE-4C97-A34D-220A255092E0";

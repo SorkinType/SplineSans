@@ -200,7 +200,7 @@ field, using bits 0 and 5.</pre>
 <br>
 </details>
 <details>
-<summary><b>[203] SplineSansUI[wght].ttf</b></summary>
+<summary><b>[203] SplineSans[wght].ttf</b></summary>
 <details>
 <summary>💔 <b>ERROR:</b> Check samples can be rendered.</summary>
 
@@ -211,50 +211,6 @@ verifies that all samples provided on METADATA.pb can be properly rendered by
 the font.</pre>
 
 * 💔 **ERROR** Failed with AttributeError: 'NoneType' object has no attribute 'sample_glyphs'
-
-</details>
-<details>
-<summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
-
-* [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
-<pre>--- Rationale ---
-A font&#x27;s winAscent and winDescent values should be greater than the head table&#x27;s
-yMax, abs(yMin) values. If they are less than these values, clipping can occur
-on Windows platforms (https://github.com/RedHatBrand/Overpass/issues/33).
-If the font includes tall/deep writing systems such as Arabic or Devanagari, the
-winAscent and winDescent can be greater than the yMax and abs(yMin) to
-accommodate vowel marks.
-When the win Metrics are significantly greater than the upm, the linespacing can
-appear too loose. To counteract this, enabling the OS/2 fsSelection bit 7
-(Use_Typo_Metrics), will force Windows to use the OS/2 typo values instead. This
-means the font developer can control the linespacing with the typo values,
-whilst avoiding clipping by setting the win values to values greater than the
-yMax and abs(yMin).</pre>
-
-* 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1993, but got 1536 instead [code: ascent]
-
-</details>
-<details>
-<summary>🔥 <b>FAIL:</b> Checking OS/2 Metrics match hhea Metrics.</summary>
-
-* [com.google.fonts/check/os2_metrics_match_hhea](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/os2_metrics_match_hhea)
-<pre>--- Rationale ---
-OS/2 and hhea vertical metric values should match. This will produce the same
-linespacing on Mac, GNU+Linux and Windows.
-- Mac OS X uses the hhea values.
-- Windows uses OS/2 or Win, depending on the OS or fsSelection bit value.
-When OS/2 and hhea vertical metrics match, the same linespacing results on
-macOS, GNU+Linux and Windows. Unfortunately as of 2018, Google Fonts has
-released many fonts with vertical metrics that don&#x27;t match in this way. When we
-fix this issue in these existing families, we will create a visible change in
-line/paragraph layout for either Windows or macOS users, which will upset some
-of them.
-But we have a duty to fix broken stuff, and inconsistent paragraph layout is
-unacceptably broken when it is possible to avoid it.
-If users complain and prefer the old broken version, they have the freedom to
-take care of their own situation.</pre>
-
-* 🔥 **FAIL** OS/2 sTypoAscender (1536) and hhea ascent (2000) must be equal. [code: ascender]
 
 </details>
 <details>
@@ -383,26 +339,26 @@ substitution rules. Any glyphs not accessible by either of these means are
 redundant and serve only to increase the font&#x27;s file size.</pre>
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
- - macronbelow
  - g.ss02.alt
- - uni0308.001
- - ringacutecomb
- - ij_acutecomb
- - .null
  - uni0326.002
- - Barmid_part.
- - OSlash_part.
- - slashL_part.
- - IJ_acutecomb
- - ringcomba_part.
+ - ij_acutecomb
+ - commaturnedabove
  - Bar_part.
- - uni030C.alt.001
+ - Barmid_part.
+ - IJ_acutecomb
+ - .null
  - circumflexbelow
- - slashl_part.
- - uni030C.alt
- - oSlash_part.
- - commaturnedabove 
  - dotbelow
+ - ringacutecomb
+ - uni0308.001
+ - slashL_part.
+ - macronbelow
+ - uni030C.alt
+ - slashl_part.
+ - OSlash_part.
+ - uni030C.alt.001
+ - oSlash_part. 
+ - ringcomba_part.
  [code: unreachable-glyphs]
 
 </details>
@@ -425,6 +381,34 @@ Reference: https://github.com/googlefonts/fontbakery/issues/1845</pre>
 
 * ⚠ **WARN** This font has a digital signature (DSIG table) which is only required - even if only a dummy placeholder - on old programs like MS Office 2013 in order to work properly.
 The current recommendation is to completely remove the DSIG table. [code: found-DSIG]
+
+</details>
+<details>
+<summary>⚠ <b>WARN:</b> Are there any misaligned on-curve points?</summary>
+
+* [com.google.fonts/check/outline_alignment_miss](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_alignment_miss)
+<pre>--- Rationale ---
+This check heuristically looks for on-curve points which are close to, but do
+not sit on, significant boundary coordinates. For example, a point which has a
+Y-coordinate of 1 or -1 might be a misplaced baseline point. As well as the
+baseline, here we also check for points near the x-height (but only for lower
+case Latin letters), cap-height, ascender and descender Y coordinates.
+Not all such misaligned curve points are a mistake, and sometimes the design may
+call for points in locations near the boundaries. As this check is liable to
+generate significant numbers of false positives, it will pass if there are more
+than 100 reported misalignments.</pre>
+
+* ⚠ **WARN** The following glyphs have on-curve points which have potentially incorrect y coordinates:
+	* dollar (U+0024): X=587.0,Y=1.0 (should be at baseline 0?)
+	* dollar (U+0024): X=587.0,Y=1.0 (should be at baseline 0?)
+	* ampersand (U+0026): X=1336.0,Y=-1.0 (should be at baseline 0?)
+	* ampersand (U+0026): X=1116.0,Y=-1.0 (should be at baseline 0?)
+	* nine (U+0039): X=358.5,Y=1452.5 (should be at cap-height 1454?)
+	* at (U+0040): X=1179.5,Y=-2.0 (should be at baseline 0?)
+	* U (U+0055): X=139.0,Y=1456.0 (should be at cap-height 1454?)
+	* U (U+0055): X=330.0,Y=1456.0 (should be at cap-height 1454?)
+	* f (U+0066): X=414.5,Y=1559.5 (should be at ascender 1561?)
+	* f (U+0066): X=59.0,Y=1092.0 (should be at x-height 1091?) and 88 more. [code: found-misalignments]
 
 </details>
 <details>
@@ -1515,10 +1499,10 @@ of hinted versus unhinted font files.</pre>
 
 * ℹ **INFO** Hinting filesize impact:
 
- |               | SplineSansUI[wght].ttf          |
+ |               | SplineSans[wght].ttf          |
  |:------------- | ---------------:|
- | Dehinted Size | 424.4kb |
- | Hinted Size   | 424.5kb   |
+ | Dehinted Size | 268.3kb |
+ | Hinted Size   | 268.3kb   |
  | Increase      | 24 bytes      |
  | Change        | 0.0 %  |
  [code: size-impact]
@@ -1637,7 +1621,7 @@ and separated by commas:
 - Roboto[wdth,wght].ttf
 - Familyname-Italic[wght].ttf</pre>
 
-* 🍞 **PASS** SplineSansUI[wght].ttf is named canonically.
+* 🍞 **PASS** SplineSans[wght].ttf is named canonically.
 
 </details>
 <details>
@@ -2275,7 +2259,7 @@ removed before release.</pre>
 A base expectation is that a font family&#x27;s regular/default (400 roman) style can
 render its &#x27;menu name&#x27; (nameID 1) in itself.</pre>
 
-* 🍞 **PASS** Font can successfully render its own name (SplineSansUI)
+* 🍞 **PASS** Font can successfully render its own name (SplineSans)
 
 </details>
 <details>
@@ -2284,6 +2268,50 @@ render its &#x27;menu name&#x27; (nameID 1) in itself.</pre>
 * [com.google.fonts/check/name/trailing_spaces](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/name/trailing_spaces)
 
 * 🍞 **PASS** No trailing spaces on name table entries.
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
+
+* [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
+<pre>--- Rationale ---
+A font&#x27;s winAscent and winDescent values should be greater than the head table&#x27;s
+yMax, abs(yMin) values. If they are less than these values, clipping can occur
+on Windows platforms (https://github.com/RedHatBrand/Overpass/issues/33).
+If the font includes tall/deep writing systems such as Arabic or Devanagari, the
+winAscent and winDescent can be greater than the yMax and abs(yMin) to
+accommodate vowel marks.
+When the win Metrics are significantly greater than the upm, the linespacing can
+appear too loose. To counteract this, enabling the OS/2 fsSelection bit 7
+(Use_Typo_Metrics), will force Windows to use the OS/2 typo values instead. This
+means the font developer can control the linespacing with the typo values,
+whilst avoiding clipping by setting the win values to values greater than the
+yMax and abs(yMin).</pre>
+
+* 🍞 **PASS** OS/2 usWinAscent & usWinDescent values look good!
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Checking OS/2 Metrics match hhea Metrics.</summary>
+
+* [com.google.fonts/check/os2_metrics_match_hhea](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/os2_metrics_match_hhea)
+<pre>--- Rationale ---
+OS/2 and hhea vertical metric values should match. This will produce the same
+linespacing on Mac, GNU+Linux and Windows.
+- Mac OS X uses the hhea values.
+- Windows uses OS/2 or Win, depending on the OS or fsSelection bit value.
+When OS/2 and hhea vertical metrics match, the same linespacing results on
+macOS, GNU+Linux and Windows. Unfortunately as of 2018, Google Fonts has
+released many fonts with vertical metrics that don&#x27;t match in this way. When we
+fix this issue in these existing families, we will create a visible change in
+line/paragraph layout for either Windows or macOS users, which will upset some
+of them.
+But we have a duty to fix broken stuff, and inconsistent paragraph layout is
+unacceptably broken when it is possible to avoid it.
+If users complain and prefer the old broken version, they have the freedom to
+take care of their own situation.</pre>
+
+* 🍞 **PASS** OS/2.sTypoAscender/Descender values match hhea.ascent/descent.
 
 </details>
 <details>
@@ -2801,24 +2829,6 @@ features and language support to fail to work as intended.</pre>
 * 🍞 **PASS** No invalid language tags were found
 
 </details>
-<details>
-<summary>🍞 <b>PASS:</b> Are there any misaligned on-curve points?</summary>
-
-* [com.google.fonts/check/outline_alignment_miss](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_alignment_miss)
-<pre>--- Rationale ---
-This check heuristically looks for on-curve points which are close to, but do
-not sit on, significant boundary coordinates. For example, a point which has a
-Y-coordinate of 1 or -1 might be a misplaced baseline point. As well as the
-baseline, here we also check for points near the x-height (but only for lower
-case Latin letters), cap-height, ascender and descender Y coordinates.
-Not all such misaligned curve points are a mistake, and sometimes the design may
-call for points in locations near the boundaries. As this check is liable to
-generate significant numbers of false positives, it will pass if there are more
-than 100 reported misalignments.</pre>
-
-* 🍞 **PASS** So many Y-coordinates of points were close to boundaries that this was probably by design.
-
-</details>
 <br>
 </details>
 
@@ -2826,5 +2836,5 @@ than 100 reported misalignments.</pre>
 
 | 💔 ERROR | 🔥 FAIL | ⚠ WARN | 💤 SKIP | ℹ INFO | 🍞 PASS | 🔎 DEBUG |
 |:-----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| 1 | 2 | 7 | 99 | 8 | 102 | 0 |
-| 0% | 1% | 3% | 45% | 4% | 47% | 0% |
+| 1 | 0 | 8 | 99 | 8 | 103 | 0 |
+| 0% | 0% | 4% | 45% | 4% | 47% | 0% |

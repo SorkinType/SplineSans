@@ -339,26 +339,26 @@ substitution rules. Any glyphs not accessible by either of these means are
 redundant and serve only to increase the font&#x27;s file size.</pre>
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
+ - oSlash_part.
+ - IJ_acutecomb
+ - dotbelow
+ - circumflexbelow
+ - Bar_part.
+ - .null
+ - ringacutecomb
+ - slashl_part.
+ - uni030C.alt
+ - ij_acutecomb
+ - uni030C.alt.001
+ - slashL_part.
+ - commaturnedabove
+ - uni0308.001
  - g.ss02.alt
  - uni0326.002
- - ij_acutecomb
- - commaturnedabove
- - Bar_part.
- - Barmid_part.
- - IJ_acutecomb
- - .null
- - circumflexbelow
- - dotbelow
- - ringacutecomb
- - uni0308.001
- - slashL_part.
- - macronbelow
- - uni030C.alt
- - slashl_part.
  - OSlash_part.
- - uni030C.alt.001
- - oSlash_part. 
- - ringcomba_part.
+ - macronbelow
+ - ringcomba_part. 
+ - Barmid_part.
  [code: unreachable-glyphs]
 
 </details>

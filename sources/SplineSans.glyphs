@@ -1,16 +1,5 @@
 {
 .appVersion = "1352";
-DisplayStrings = (
-"FI\012OT\012OV\012PA\012RH\012RO\012RT\012RV\012ST\012SV\012UA\012WA\012/Germandbls A\012/Germandbls O\012Hn\012Pa\012Pn\012Ra\012Ro\012Rv\012Tw\012Wa\012Xn\012it\012oy\012py\012ra\012ro\012ßn\012ßv\012/tcaron a\012v,\012T,\012V,\012i?\012s'\012/quoteleft b\012/quoteleft f\012S\"\012Z/quoteright \012/quoteleft 0\012/quoteleft 1\012/quoteleft 8\012s)\012t)\012­H\012o/endash \012/endash n\012/endash H\012v&\012\012HH\012hh\012nn\012no\012\012PV\012RA\012SA\012Pv\012pa\012rv\012ry\012tz\012zw\012zy\012/dcaron f\012",
-"$1\012$6\0129/euro \0120¥\012,9\012,4\012Ac\012,5\012,2\012.j\0120£\012BA\0120/euro \012ly\012lu\0121$\012an\012BI\012CÆ\012BÆ\012rt\012DÆ\012EÆ\012ff\012ln\012A©\012/lcaron ì\012AÆ\012$4\012$0\012fï\012f/itilde \012$2\0124$\012£5\0121/euro \012YA\012-o\012ll\0120$\012a)\01200\012/quoteleft 7\012ab\012T?\012lb\01211\0120&\012f&\012/quoteleft 9\012/quoteleft A\012yp\012¿7\012ao\012Gr\012PO\012ow\012oonn\012ss\012HO\012OH\012CI\012SS\012OO\012na\012oh\012on\012XI\012XX\012oa\012ho\012£1\012nh\012t'\012\012TEHOHDIV/space TEHUAUDIV/space TEHRODIV/space",
-"$1\012$6\0129/euro \0120¥\012,9\012,4\012Ac\012,5\012,2\012.j\0120£\012BA\0120/euro \012ly\012lu\0121$\012an\012BI\012CÆ\012BÆ\012rt\012DÆ\012EÆ\012ff\012ln\012A©\012/lcaron ì\012AÆ\012$4\012$0\012fï\012f/itilde \012$2\0124$\012£5\0121/euro \012YA\012-o\012ll\0120$\012a)\012PA\012/quoteleft 7\012RH\012T?\012/Germandbls O\012WA\012SV\012PV\012/quoteleft 9\012/quoteleft A\012/endash n\012¿7\012T,\012OV\012it\012ow\012PO\012ss\012Wa\012CI\012SS\012Z/quoteright \012na\012XI\012XX\012UA\012£1\012nh\012t'\012­H\012Pa\012/Germandbls A\012OT\012pa\012Pn\012",
-"AC\012AG\012AT\012AV\012AY\012FI\012HH\012OT\012OV\012PA\012PO\012PS\012RO\012RS\012RT\012RV\012ST\012SV\012TA\012UA\012VA\012WA\012XI\012YG\012Aa\012Ac\012Ad\012Au\012Av\012Hn\012Pa\012Pi\012Pn\012Po\012Ra\012Ro\012Rv\012Tv\012Tw\012Wa\012Xn\012Yu\012Yy\012av\012aw\012it\012oy\012py\012ra\012ro\012yq\012ßn\012/tcaron h\012A/trademark \012v,\012,8\012.4\012T,\012U,\012U.\012V,\012i?\012'a\012'n\012'o\012/quoteleft b\012/quoteright s\012'4\012'5\012'8\012'9\012'H\012'S\012'Y\012S\"\012Z/quoteright \012/quoteleft 0\012/guilsinglleft A\012/guilsinglleft H\012/guilsinglleft V\012/guilsinglleft Z\012(d\012(e\012s)\012t)\012(C\012-n\012-o\012-M\012­H\012o/endash \012/endash n\012/endash H\012v&\012£3\012£4\012£5\012£6\012¥6\012+2\012+3\012+4\012+5\012+6\012+7\012+8\012+9\0121+\012\012AS\012BA\012CI\012EH\012HO\012OH\012OO\012PV\012RH\012Gr\012an\012ao\012fi\012hh\012hn\012ho\012na\012nh\012nn\012no\012oh\012on\012oo\012or\012ow\012po\012ßv\012/dcaron f\012/lcaron t\012/tcaron a\012\012RA\012SA\012SS\012XX\012/Germandbls A\012/Germandbls O\012/Germandbls V\012Pv\012St\012oa\012pa\012rv\012ry\012so\012ss\012tt\012tz\012zw\012zy\012/tcaron f\012/tcaron v\012£1\012£2\012£7\012/euro 2\012\012Hniroid/space ni/tcaron aid/space",
-"/zero.ss03",
-"/zero.tf.zero",
-"Ã",
-"/Aringacute",
-"H./space o.n./space O.\012nihoid/space nioaid/space \012.4U.\012H0\012H-­H/endash HV,"
-);
 classes = (
 {
 automatic = 1;
@@ -85,7 +74,7 @@ wght = {
 );
 date = "2021-11-17 18:44:45 +0000";
 designer = "Eben Sorkin, Mirko Velimirovic";
-familyName = "Spline Sans B";
+familyName = "Spline Sans";
 featurePrefixes = (
 {
 code = "languagesystem DFLT dflt;\012\012languagesystem latn dflt;\012languagesystem latn AZE;\012languagesystem latn CRT;\012languagesystem latn KAZ;\012languagesystem latn TAT;\012languagesystem latn TRK;\012languagesystem latn ROM;\012languagesystem latn MOL;\012languagesystem latn CAT;\012languagesystem latn NLD;\012";
@@ -63484,7 +63473,7 @@ instances = (
 customParameters = (
 {
 name = preferredFamilyName;
-value = "Spline Sans B";
+value = "Spline Sans";
 },
 {
 name = preferredSubfamilyName;
@@ -63504,7 +63493,7 @@ weightClass = Light;
 customParameters = (
 {
 name = preferredFamilyName;
-value = "Spline Sans B";
+value = "Spline Sans";
 },
 {
 name = preferredSubfamilyName;
@@ -63523,7 +63512,7 @@ name = Regular;
 customParameters = (
 {
 name = preferredFamilyName;
-value = "Spline Sans B";
+value = "Spline Sans";
 },
 {
 name = preferredSubfamilyName;
@@ -63544,7 +63533,7 @@ weightClass = Medium;
 customParameters = (
 {
 name = preferredFamilyName;
-value = "Spline Sans B";
+value = "Spline Sans";
 },
 {
 name = preferredSubfamilyName;
@@ -63563,7 +63552,7 @@ weightClass = SemiBold;
 customParameters = (
 {
 name = preferredFamilyName;
-value = "Spline Sans B";
+value = "Spline Sans";
 },
 {
 name = preferredSubfamilyName;

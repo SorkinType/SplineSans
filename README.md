@@ -17,7 +17,7 @@ Contributions
 -------------
 
 
-To contribute ideas and feedback, see [https://github.com/EbenSorkin/Spline-Sans-UI](https://github.com/EbenSorkin/Spline-Sans-UI)
+To contribute ideas and feedback, see [https://github.com/SorkinType/SplineSans](https://github.com/SorkinType/SplineSans)
 
 
 Source Files - Glyphs app file

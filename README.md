@@ -3,7 +3,7 @@ Spline Sans by Sorkin Type
 
 Spline Sans is a Grotesque purpose-built for UI interfaces, checkout processes, and paragraphs of text. Space efficiency is accomplished by condensing traditional grotesque proportions. The cool and restrained tone is accented with strategic "thorn" traps, which blossom into view when set at larger sizes.
 
-Spline Sans is an original typeface designed by Eben Sorkin and Mirko Velimirovic.
+Spline Sans is an original typeface initiated by the <a href="https://spline.design/">Spline Team</a> and designed by Eben Sorkin and Mirko Velimirovic.
 Project manager - Faride Mereb. Testing and design feedback - Gonçalo Teixeira. Concept - Alejandro León.
 
 Spline Sans supports Google Core, Google Plus, Google Pro, Plus Optional, and Pro optional glyph sets, enabling the typesetting of English, and Western European languages.

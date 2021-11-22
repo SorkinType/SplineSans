@@ -214,17 +214,6 @@ the font.</pre>
 
 </details>
 <details>
-<summary>🔥 <b>FAIL:</b> A variable font must have named instances.</summary>
-
-* [com.google.fonts/check/varfont_has_instances](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/varfont_has_instances)
-<pre>--- Rationale ---
-Named instances must be present in all variable fonts in order not to frustrate
-the users&#x27; typical expectations of a traditional static font workflow.</pre>
-
-* 🔥 **FAIL** This variable font lacks named instances on the fvar table. [code: lacks-named-instances]
-
-</details>
-<details>
 <summary>⚠ <b>WARN:</b> Checking OS/2 achVendID.</summary>
 
 * [com.google.fonts/check/vendor_id](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vendor_id)
@@ -351,27 +340,48 @@ substitution rules. Any glyphs not accessible by either of these means are
 redundant and serve only to increase the font&#x27;s file size.</pre>
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
+ - ringacutecomb
+ - macronbelow
  - Bar_part.
- - oSlash_part.
- - circumflexbelow
  - ringcomba_part.
- - uni030C.alt.001
+ - slashl_part.
  - .null
  - OSlash_part.
- - uni0308.001
- - slashl_part.
- - dotbelow
- - Barmid_part.
- - uni030C.alt
+ - slashL_part.
+ - uni0326.002
+ - uni030C.alt.001
+ - g.ss02.alt
+ - circumflexbelow
  - commaturnedabove
  - IJ_acutecomb
- - uni0326.002
- - macronbelow
  - ij_acutecomb
- - g.ss02.alt
- - slashL_part. 
- - ringacutecomb
+ - uni030C.alt
+ - oSlash_part.
+ - Barmid_part.
+ - uni0308.001 
+ - dotbelow
  [code: unreachable-glyphs]
+
+</details>
+<details>
+<summary>⚠ <b>WARN:</b> Does the font have a DSIG table?</summary>
+
+* [com.google.fonts/check/dsig](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/dsig.html#com.google.fonts/check/dsig)
+<pre>--- Rationale ---
+Microsoft Office 2013 and below products expect fonts to have a digital
+signature declared in a DSIG table in order to implement OpenType features. The
+EOL date for Microsoft Office 2013 products is 4/11/2023. This issue does not
+impact Microsoft Office 2016 and above products.
+As we approach the EOL date, it is now considered better to completely remove
+the table.
+But if you still want your font to support OpenType features on Office 2013,
+then you may find it handy to add a fake signature on a dummy DSIG table by
+running one of the helper scripts provided at
+https://github.com/googlefonts/gftools
+Reference: https://github.com/googlefonts/fontbakery/issues/1845</pre>
+
+* ⚠ **WARN** This font has a digital signature (DSIG table) which is only required - even if only a dummy placeholder - on old programs like MS Office 2013 in order to work properly.
+The current recommendation is to completely remove the DSIG table. [code: found-DSIG]
 
 </details>
 <details>
@@ -494,7 +504,7 @@ on them.</pre>
 The purpose of this check is to ensure that the METADATA.pb file is not
 malformed.</pre>
 
-* 💤 **SKIP** Font family at '.' lacks a METADATA.pb file. [code: file-not-found]
+* 💤 **SKIP** Font family at 'fonts' lacks a METADATA.pb file. [code: file-not-found]
 
 </details>
 <details>
@@ -1307,20 +1317,6 @@ guarantee which table an app will get the data from.</pre>
 
 </details>
 <details>
-<summary>💤 <b>SKIP:</b> The variable font 'wght' (Weight) axis coordinate must be 400 on the 'Regular' instance.</summary>
-
-* [com.google.fonts/check/varfont/regular_wght_coord](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/fvar.html#com.google.fonts/check/varfont/regular_wght_coord)
-<pre>--- Rationale ---
-According to the Open-Type spec&#x27;s registered design-variation tag &#x27;wght&#x27;
-available at
-https://docs.microsoft.com/en-gb/typography/opentype/spec/dvaraxistag_wght
-If a variable font has a &#x27;wght&#x27; (Weight) axis, then the coordinate of its
-&#x27;Regular&#x27; instance is required to be 400.</pre>
-
-* 💤 **SKIP** Unfulfilled Conditions: regular_wght_coord
-
-</details>
-<details>
 <summary>💤 <b>SKIP:</b> The variable font 'wdth' (Width) axis coordinate must be 100 on the 'Regular' instance.</summary>
 
 * [com.google.fonts/check/varfont/regular_wdth_coord](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/fvar.html#com.google.fonts/check/varfont/regular_wdth_coord)
@@ -1374,20 +1370,6 @@ If a variable font has an &#x27;opsz&#x27; (Optical Size) axis, then the coordin
 &#x27;Regular&#x27; instance is recommended to be a value in the range 10 to 16.</pre>
 
 * 💤 **SKIP** Unfulfilled Conditions: regular_opsz_coord
-
-</details>
-<details>
-<summary>💤 <b>SKIP:</b> The variable font 'wght' (Weight) axis coordinate must be 700 on the 'Bold' instance.</summary>
-
-* [com.google.fonts/check/varfont/bold_wght_coord](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/fvar.html#com.google.fonts/check/varfont/bold_wght_coord)
-<pre>--- Rationale ---
-The Open-Type spec&#x27;s registered design-variation tag &#x27;wght&#x27; available at
-https://docs.microsoft.com/en-gb/typography/opentype/spec/dvaraxistag_wght does
-not specify a required value for the &#x27;Bold&#x27; instance of a variable font.
-But Dave Crossland suggested that we should enforce a required value of 700 in
-this case.</pre>
-
-* 💤 **SKIP** Unfulfilled Conditions: bold_wght_coord
 
 </details>
 <details>
@@ -1518,10 +1500,10 @@ of hinted versus unhinted font files.</pre>
 
 * ℹ **INFO** Hinting filesize impact:
 
- |               | SplineSans[wght].ttf          |
+ |               | fonts/SplineSans[wght].ttf          |
  |:------------- | ---------------:|
- | Dehinted Size | 517.4kb |
- | Hinted Size   | 517.4kb   |
+ | Dehinted Size | 517.8kb |
+ | Hinted Size   | 517.8kb   |
  | Increase      | 24 bytes      |
  | Change        | 0.0 %  |
  [code: size-impact]
@@ -1534,7 +1516,7 @@ of hinted versus unhinted font files.</pre>
 <pre>--- Rationale ---
 Check if font has been hinted with an outdated version of ttfautohint.</pre>
 
-* ℹ **INFO** Could not detect which version of ttfautohint was used in this font. It is typically specified as a comment in the font version entries of the 'name' table. Such font version strings are currently: ['Version 1.005'] [code: version-not-detected]
+* ℹ **INFO** Could not detect which version of ttfautohint was used in this font. It is typically specified as a comment in the font version entries of the 'name' table. Such font version strings are currently: ['Version 1.000'] [code: version-not-detected]
 
 </details>
 <details>
@@ -1588,7 +1570,7 @@ are awesome and we would love to consider upstreaming the approach into fontmake
 someday. For now we only emit a WARN if a given font does not yet follow the
 experimental versioning style, but at some point we may start enforcing it.</pre>
 
-* ℹ **INFO** Version string is: "Version 1.005"
+* ℹ **INFO** Version string is: "Version 1.000"
 The version string must ideally include a git commit hash and either a "dev" or a "release" suffix such as in the example below:
 "Version 1.3; git-0d08353-release" [code: bad-format]
 
@@ -1623,7 +1605,7 @@ fontbakery.
 Only the fontfiles in these directories will be considered in superfamily-level
 checks.</pre>
 
-* ℹ **INFO** . [code: family-path]
+* ℹ **INFO** fonts [code: family-path]
 
 </details>
 <details>
@@ -1640,7 +1622,7 @@ and separated by commas:
 - Roboto[wdth,wght].ttf
 - Familyname-Italic[wght].ttf</pre>
 
-* 🍞 **PASS** SplineSans[wght].ttf is named canonically.
+* 🍞 **PASS** fonts/SplineSans[wght].ttf is named canonically.
 
 </details>
 <details>
@@ -1808,7 +1790,7 @@ Arabic / etc.</pre>
 
 * [com.google.fonts/check/font_copyright](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/font_copyright)
 
-* 🍞 **PASS** Name Table entry: Copyright field 'Copyright 2021 The SplineSans Project Authors (https://github.com/SorkinType/SplineSans)' matches canonical pattern.
+* 🍞 **PASS** Name Table entry: Copyright field 'Copyright 2021 The Spline Sans Project Authors (https://github.com/SorkinType/SplineSans)' matches canonical pattern.
 * 🍞 **PASS** Name table copyright entries are good
 
 </details>
@@ -2008,6 +1990,17 @@ files, but Google Fonts should only have OpenType tables.
 <pre>--- Rationale ---
 The purpose of this check is to make sure that all name entries referenced by
 variable font instances do exist in the name table.</pre>
+
+* 🍞 **PASS** OK
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> A variable font must have named instances.</summary>
+
+* [com.google.fonts/check/varfont_has_instances](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/varfont_has_instances)
+<pre>--- Rationale ---
+Named instances must be present in all variable fonts in order not to frustrate
+the users&#x27; typical expectations of a traditional static font workflow.</pre>
 
 * 🍞 **PASS** OK
 
@@ -2267,7 +2260,7 @@ removed before release.</pre>
 A base expectation is that a font family&#x27;s regular/default (400 roman) style can
 render its &#x27;menu name&#x27; (nameID 1) in itself.</pre>
 
-* 🍞 **PASS** Font can successfully render its own name (SplineSans)
+* 🍞 **PASS** Font can successfully render its own name (Spline Sans)
 
 </details>
 <details>
@@ -2632,26 +2625,6 @@ This is the TTF/CFF2 equivalent of the CFF &#x27;name/postscript_vs_cff&#x27; ch
 
 </details>
 <details>
-<summary>🍞 <b>PASS:</b> Does the font have a DSIG table?</summary>
-
-* [com.google.fonts/check/dsig](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/dsig.html#com.google.fonts/check/dsig)
-<pre>--- Rationale ---
-Microsoft Office 2013 and below products expect fonts to have a digital
-signature declared in a DSIG table in order to implement OpenType features. The
-EOL date for Microsoft Office 2013 products is 4/11/2023. This issue does not
-impact Microsoft Office 2016 and above products.
-As we approach the EOL date, it is now considered better to completely remove
-the table.
-But if you still want your font to support OpenType features on Office 2013,
-then you may find it handy to add a fake signature on a dummy DSIG table by
-running one of the helper scripts provided at
-https://github.com/googlefonts/gftools
-Reference: https://github.com/googlefonts/fontbakery/issues/1845</pre>
-
-* 🍞 **PASS** ok
-
-</details>
-<details>
 <summary>🍞 <b>PASS:</b> Space and non-breaking space have the same width?</summary>
 
 * [com.google.fonts/check/whitespace_widths](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/hmtx.html#com.google.fonts/check/whitespace_widths)
@@ -2756,6 +2729,34 @@ the same x,y coordinates.</pre>
 
 </details>
 <details>
+<summary>🍞 <b>PASS:</b> The variable font 'wght' (Weight) axis coordinate must be 400 on the 'Regular' instance.</summary>
+
+* [com.google.fonts/check/varfont/regular_wght_coord](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/fvar.html#com.google.fonts/check/varfont/regular_wght_coord)
+<pre>--- Rationale ---
+According to the Open-Type spec&#x27;s registered design-variation tag &#x27;wght&#x27;
+available at
+https://docs.microsoft.com/en-gb/typography/opentype/spec/dvaraxistag_wght
+If a variable font has a &#x27;wght&#x27; (Weight) axis, then the coordinate of its
+&#x27;Regular&#x27; instance is required to be 400.</pre>
+
+* 🍞 **PASS** Regular:wght is 400.
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> The variable font 'wght' (Weight) axis coordinate must be 700 on the 'Bold' instance.</summary>
+
+* [com.google.fonts/check/varfont/bold_wght_coord](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/fvar.html#com.google.fonts/check/varfont/bold_wght_coord)
+<pre>--- Rationale ---
+The Open-Type spec&#x27;s registered design-variation tag &#x27;wght&#x27; available at
+https://docs.microsoft.com/en-gb/typography/opentype/spec/dvaraxistag_wght does
+not specify a required value for the &#x27;Bold&#x27; instance of a variable font.
+But Dave Crossland suggested that we should enforce a required value of 700 in
+this case.</pre>
+
+* 🍞 **PASS** Bold:wght is 700.
+
+</details>
+<details>
 <summary>🍞 <b>PASS:</b> The variable font 'wght' (Weight) axis coordinate must be within spec range of 1 to 1000 on all instances.</summary>
 
 * [com.google.fonts/check/varfont/wght_valid_range](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/fvar.html#com.google.fonts/check/varfont/wght_valid_range)
@@ -2836,5 +2837,5 @@ features and language support to fail to work as intended.</pre>
 
 | 💔 ERROR | 🔥 FAIL | ⚠ WARN | 💤 SKIP | ℹ INFO | 🍞 PASS | 🔎 DEBUG |
 |:-----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| 1 | 1 | 7 | 101 | 8 | 101 | 0 |
-| 0% | 0% | 3% | 46% | 4% | 46% | 0% |
+| 1 | 0 | 8 | 99 | 8 | 103 | 0 |
+| 0% | 0% | 4% | 45% | 4% | 47% | 0% |

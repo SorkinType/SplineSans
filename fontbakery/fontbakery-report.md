@@ -118,26 +118,26 @@ substitution rules. Any glyphs not accessible by either of these means are
 redundant and serve only to increase the font&#x27;s file size.</pre>
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
+ - Barmid_part.
+ - uni0326.002
  - ringacutecomb
+ - uni030C.alt
+ - dotbelow
+ - commaturnedabove
+ - oSlash_part.
+ - g.ss02.alt
  - IJ_acutecomb
+ - ij_acutecomb
  - ringcomba_part.
+ - .null
+ - circumflexbelow
+ - slashl_part.
+ - Bar_part.
  - OSlash_part.
  - macronbelow
- - commaturnedabove
- - dotbelow
- - slashL_part.
- - Bar_part.
- - uni0326.002
- - ij_acutecomb
- - .null
- - oSlash_part.
- - circumflexbelow
- - g.ss02.alt
- - slashl_part.
  - uni030C.alt.001
- - uni030C.alt
  - uni0308.001 
- - Barmid_part.
+ - slashL_part.
  [code: unreachable-glyphs]
 
 </details>
@@ -376,26 +376,26 @@ substitution rules. Any glyphs not accessible by either of these means are
 redundant and serve only to increase the font&#x27;s file size.</pre>
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
+ - Barmid_part.
+ - uni0326.002
  - ringacutecomb
+ - uni030C.alt
+ - dotbelow
+ - commaturnedabove
+ - oSlash_part.
+ - g.ss02.alt
  - IJ_acutecomb
+ - ij_acutecomb
  - ringcomba_part.
+ - .null
+ - circumflexbelow
+ - slashl_part.
+ - Bar_part.
  - OSlash_part.
  - macronbelow
- - commaturnedabove
- - dotbelow
- - slashL_part.
- - Bar_part.
- - uni0326.002
- - ij_acutecomb
- - .null
- - oSlash_part.
- - circumflexbelow
- - g.ss02.alt
- - slashl_part.
  - uni030C.alt.001
- - uni030C.alt
  - uni0308.001 
- - Barmid_part.
+ - slashL_part.
  [code: unreachable-glyphs]
 
 </details>
@@ -634,26 +634,26 @@ substitution rules. Any glyphs not accessible by either of these means are
 redundant and serve only to increase the font&#x27;s file size.</pre>
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
+ - Barmid_part.
+ - uni0326.002
  - ringacutecomb
+ - uni030C.alt
+ - dotbelow
+ - commaturnedabove
+ - oSlash_part.
+ - g.ss02.alt
  - IJ_acutecomb
+ - ij_acutecomb
  - ringcomba_part.
+ - .null
+ - circumflexbelow
+ - slashl_part.
+ - Bar_part.
  - OSlash_part.
  - macronbelow
- - commaturnedabove
- - dotbelow
- - slashL_part.
- - Bar_part.
- - uni0326.002
- - ij_acutecomb
- - .null
- - oSlash_part.
- - circumflexbelow
- - g.ss02.alt
- - slashl_part.
  - uni030C.alt.001
- - uni030C.alt
  - uni0308.001 
- - Barmid_part.
+ - slashL_part.
  [code: unreachable-glyphs]
 
 </details>
@@ -892,26 +892,26 @@ substitution rules. Any glyphs not accessible by either of these means are
 redundant and serve only to increase the font&#x27;s file size.</pre>
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
+ - Barmid_part.
+ - uni0326.002
  - ringacutecomb
+ - uni030C.alt
+ - dotbelow
+ - commaturnedabove
+ - oSlash_part.
+ - g.ss02.alt
  - IJ_acutecomb
+ - ij_acutecomb
  - ringcomba_part.
+ - .null
+ - circumflexbelow
+ - slashl_part.
+ - Bar_part.
  - OSlash_part.
  - macronbelow
- - commaturnedabove
- - dotbelow
- - slashL_part.
- - Bar_part.
- - uni0326.002
- - ij_acutecomb
- - .null
- - oSlash_part.
- - circumflexbelow
- - g.ss02.alt
- - slashl_part.
  - uni030C.alt.001
- - uni030C.alt
  - uni0308.001 
- - Barmid_part.
+ - slashL_part.
  [code: unreachable-glyphs]
 
 </details>
@@ -1174,26 +1174,26 @@ substitution rules. Any glyphs not accessible by either of these means are
 redundant and serve only to increase the font&#x27;s file size.</pre>
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
+ - Barmid_part.
+ - uni0326.002
  - ringacutecomb
+ - uni030C.alt
+ - dotbelow
+ - commaturnedabove
+ - oSlash_part.
+ - g.ss02.alt
  - IJ_acutecomb
+ - ij_acutecomb
  - ringcomba_part.
+ - .null
+ - circumflexbelow
+ - slashl_part.
+ - Bar_part.
  - OSlash_part.
  - macronbelow
- - commaturnedabove
- - dotbelow
- - slashL_part.
- - Bar_part.
- - uni0326.002
- - ij_acutecomb
- - .null
- - oSlash_part.
- - circumflexbelow
- - g.ss02.alt
- - slashl_part.
  - uni030C.alt.001
- - uni030C.alt
  - uni0308.001 
- - Barmid_part.
+ - slashL_part.
  [code: unreachable-glyphs]
 
 </details>

@@ -1,8 +1,5 @@
 {
-.appVersion = "1356";
-DisplayStrings = (
-".,."
-);
+.appVersion = "3104";
 classes = (
 {
 automatic = 1;
@@ -12,15 +9,6 @@ name = Uppercase;
 );
 copyright = "Copyright 2021 The Spline Sans Project Authors (https://github.com/SorkinType/SplineSans)";
 customParameters = (
-{
-name = Axes;
-value = (
-{
-Name = Weight;
-Tag = wght;
-}
-);
-},
 {
 name = fsType;
 value = (
@@ -51,14 +39,6 @@ name = blueFuzz;
 value = 0;
 },
 {
-name = license;
-value = "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL";
-},
-{
-name = licenseURL;
-value = "http://scripts.sil.org/OFL";
-},
-{
 name = "Variable Font Origin";
 value = "6BAFAE09-C5B8-4469-A8F8-E185939BEC5C";
 },
@@ -73,6 +53,23 @@ wght = {
 700 = 310;
 };
 };
+},
+{
+name = license;
+value = "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL";
+},
+{
+name = licenseURL;
+value = "https://scripts.sil.org/OFL";
+},
+{
+name = Axes;
+value = (
+{
+Name = Weight;
+Tag = wght;
+}
+);
 }
 );
 date = "2021-11-22 17:22:33 +0000";
@@ -191,7 +188,6 @@ alignmentZones = (
 );
 ascender = 1912;
 capHeight = 1454;
-customValue = 100;
 customParameters = (
 {
 name = winAscent;
@@ -285,7 +281,8 @@ position = "{-370, -451}";
 }
 );
 horizontalStems = (
-118
+118,
+0
 );
 id = "0D9D1AFE-BAFC-449A-A530-9FCA9CDF2E2E";
 userData = {
@@ -494,7 +491,6 @@ verticalStems = (
 );
 weight = Light;
 weightValue = 120;
-widthValue = 500;
 xHeight = 1091;
 },
 {
@@ -507,7 +503,6 @@ alignmentZones = (
 );
 ascender = 1912;
 capHeight = 1454;
-customValue = 100;
 customParameters = (
 {
 name = winAscent;
@@ -568,7 +563,8 @@ position = "{74, 271}";
 }
 );
 horizontalStems = (
-176
+176,
+0
 );
 id = "6BAFAE09-C5B8-4469-A8F8-E185939BEC5C";
 userData = {
@@ -727,7 +723,6 @@ verticalStems = (
 189
 );
 weightValue = 185;
-widthValue = 500;
 xHeight = 1091;
 },
 {
@@ -741,7 +736,6 @@ alignmentZones = (
 ascender = 1912;
 capHeight = 1454;
 custom = Medium;
-customValue = 100;
 customParameters = (
 {
 name = winAscent;
@@ -974,7 +968,6 @@ verticalStems = (
 228
 );
 weightValue = 224;
-widthValue = 500;
 xHeight = 1091;
 },
 {
@@ -987,7 +980,6 @@ alignmentZones = (
 );
 ascender = 1912;
 capHeight = 1454;
-customValue = 100;
 customParameters = (
 {
 name = winAscent;
@@ -1368,11 +1360,11 @@ KernOnModels = (
 );
 };
 verticalStems = (
-310
+310,
+0
 );
 weight = Bold;
 weightValue = 310;
-widthValue = 500;
 xHeight = 1091;
 }
 );
@@ -7288,14 +7280,16 @@ unicode = 013B;
 {
 color = 0;
 glyphname = Ldot;
-lastChange = "2021-11-17 06:20:20 +0000";
+lastChange = "2021-12-01 18:48:05 +0000";
 layers = (
 {
 components = (
 {
+alignment = -1;
 name = L;
 },
 {
+alignment = -1;
 name = periodcentered;
 transform = "{1, 0, 0, 1, 926, 0}";
 }
@@ -7306,6 +7300,7 @@ width = 1226;
 {
 components = (
 {
+alignment = -1;
 name = L;
 },
 {
@@ -23045,14 +23040,16 @@ unicode = 013C;
 {
 color = 0;
 glyphname = ldot;
-lastChange = "2021-11-17 06:20:20 +0000";
+lastChange = "2021-12-01 18:48:05 +0000";
 layers = (
 {
 components = (
 {
+alignment = -1;
 name = l;
 },
 {
+alignment = -1;
 name = periodcentered;
 transform = "{1, 0, 0, 1, 426, 0}";
 }
@@ -23063,6 +23060,7 @@ width = 726;
 {
 components = (
 {
+alignment = -1;
 name = l;
 },
 {
@@ -23077,6 +23075,7 @@ width = 916;
 {
 components = (
 {
+alignment = -1;
 name = l;
 },
 {
@@ -63473,19 +63472,7 @@ width = 1200;
 );
 instances = (
 {
-customParameters = (
-{
-name = preferredFamilyName;
-value = "Spline Sans";
-},
-{
-name = preferredSubfamilyName;
-value = Light;
-}
-);
-interpolationCustom = 100;
 interpolationWeight = 120;
-interpolationWidth = 500;
 instanceInterpolations = {
 "0D9D1AFE-BAFC-449A-A530-9FCA9CDF2E2E" = 1;
 };
@@ -63493,38 +63480,14 @@ name = Light;
 weightClass = Light;
 },
 {
-customParameters = (
-{
-name = preferredFamilyName;
-value = "Spline Sans";
-},
-{
-name = preferredSubfamilyName;
-value = Regular;
-}
-);
-interpolationCustom = 100;
 interpolationWeight = 185;
-interpolationWidth = 500;
 instanceInterpolations = {
 "6BAFAE09-C5B8-4469-A8F8-E185939BEC5C" = 1;
 };
 name = Regular;
 },
 {
-customParameters = (
-{
-name = preferredFamilyName;
-value = "Spline Sans";
-},
-{
-name = preferredSubfamilyName;
-value = Medium;
-}
-);
-interpolationCustom = 100;
 interpolationWeight = 235;
-interpolationWidth = 500;
 instanceInterpolations = {
 "09AB1441-CF14-483D-884E-606841830E4D" = 0.87209;
 "BF6BC6F6-4B2A-4E9B-9E28-8B62B2F12FD9" = 0.12791;
@@ -63533,16 +63496,6 @@ name = Medium;
 weightClass = Medium;
 },
 {
-customParameters = (
-{
-name = preferredFamilyName;
-value = "Spline Sans";
-},
-{
-name = preferredSubfamilyName;
-value = SemiBold;
-}
-);
 interpolationWeight = 275;
 instanceInterpolations = {
 "09AB1441-CF14-483D-884E-606841830E4D" = 0.40698;
@@ -63552,19 +63505,7 @@ name = SemiBold;
 weightClass = SemiBold;
 },
 {
-customParameters = (
-{
-name = preferredFamilyName;
-value = "Spline Sans";
-},
-{
-name = preferredSubfamilyName;
-value = Bold;
-}
-);
-interpolationCustom = 100;
 interpolationWeight = 310;
-interpolationWidth = 500;
 instanceInterpolations = {
 "BF6BC6F6-4B2A-4E9B-9E28-8B62B2F12FD9" = 1;
 };

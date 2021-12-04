@@ -118,26 +118,26 @@ substitution rules. Any glyphs not accessible by either of these means are
 redundant and serve only to increase the font&#x27;s file size.</pre>
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
- - circumflexbelow
- - oSlash_part.
- - IJ_acutecomb
+ - dotbelow
  - Barmid_part.
+ - ij_acutecomb
+ - IJ_acutecomb
+ - circumflexbelow
+ - slashl_part.
+ - commaturnedabove
+ - oSlash_part.
+ - ringacutecomb
+ - uni0308.001
+ - macronbelow
+ - uni030C.alt.001
+ - slashL_part.
+ - OSlash_part.
+ - .null
+ - uni0326.002
  - Bar_part.
  - uni030C.alt
- - ij_acutecomb
+ - ringcomba_part. 
  - g.ss02.alt
- - .null
- - ringacutecomb
- - OSlash_part.
- - uni0308.001
- - dotbelow
- - uni0326.002
- - commaturnedabove
- - slashL_part.
- - uni030C.alt.001
- - ringcomba_part.
- - slashl_part. 
- - macronbelow
  [code: unreachable-glyphs]
 
 </details>
@@ -225,11 +225,11 @@ by manual inspection.</pre>
 	* B (U+0042): B<<1032.5,879.5>-<960.0,798.0>-<836.0,784.0>>/B<<836.0,784.0>-<976.0,777.0>-<1064.5,697.0>> = 9.30400532544674
 	* Thorn (U+00DE): B<<380.5,282.5>-<361.0,296.0>-<357.0,314.0>>/L<<357.0,314.0>--<357.0,0.0>> = 12.528807709151492
 	* Uogonek (U+0172): B<<552.0,-93.0>-<592.0,-47.0>-<696.0,-19.0>>/B<<696.0,-19.0>-<681.0,-20.0>-<665.0,-20.0>> = 11.25441332520184
-	* a (U+0061): L<<766.0,0.0>--<768.0,237.0>>/B<<768.0,237.0>-<743.0,124.0>-<655.5,56.0>> = 11.991612501318665
-	* aacute (U+00E1): L<<766.0,0.0>--<768.0,237.0>>/B<<768.0,237.0>-<743.0,124.0>-<655.5,56.0>> = 11.991612501318665
-	* abreve (U+0103): L<<766.0,0.0>--<768.0,237.0>>/B<<768.0,237.0>-<743.0,124.0>-<655.5,56.0>> = 11.991612501318665
-	* acircumflex (U+00E2): L<<766.0,0.0>--<768.0,237.0>>/B<<768.0,237.0>-<743.0,124.0>-<655.5,56.0>> = 11.991612501318665
-	* adieresis (U+00E4): L<<766.0,0.0>--<768.0,237.0>>/B<<768.0,237.0>-<743.0,124.0>-<655.5,56.0>> = 11.991612501318665
+	* a (U+0061): L<<764.0,0.0>--<766.0,237.0>>/B<<766.0,237.0>-<741.0,124.0>-<653.5,56.0>> = 11.991612501318665
+	* aacute (U+00E1): L<<764.0,0.0>--<766.0,237.0>>/B<<766.0,237.0>-<741.0,124.0>-<653.5,56.0>> = 11.991612501318665
+	* abreve (U+0103): L<<764.0,0.0>--<766.0,237.0>>/B<<766.0,237.0>-<741.0,124.0>-<653.5,56.0>> = 11.991612501318665
+	* acircumflex (U+00E2): L<<764.0,0.0>--<766.0,237.0>>/B<<766.0,237.0>-<741.0,124.0>-<653.5,56.0>> = 11.991612501318665
+	* adieresis (U+00E4): L<<764.0,0.0>--<766.0,237.0>>/B<<766.0,237.0>-<741.0,124.0>-<653.5,56.0>> = 11.991612501318665
 	* ae (U+00E6): B<<1041.5,853.0>-<967.0,757.0>-<958.0,589.0>>/B<<958.0,589.0>-<965.0,627.0>-<988.5,642.0>> = 7.370989849992198
 	* aeacute (U+01FD): B<<1041.5,853.0>-<967.0,757.0>-<958.0,589.0>>/B<<958.0,589.0>-<965.0,627.0>-<988.5,642.0>> = 7.370989849992198 and 71 more. [code: found-jaggy-segments]
 
@@ -376,26 +376,26 @@ substitution rules. Any glyphs not accessible by either of these means are
 redundant and serve only to increase the font&#x27;s file size.</pre>
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
- - circumflexbelow
- - oSlash_part.
- - IJ_acutecomb
+ - dotbelow
  - Barmid_part.
+ - ij_acutecomb
+ - IJ_acutecomb
+ - circumflexbelow
+ - slashl_part.
+ - commaturnedabove
+ - oSlash_part.
+ - ringacutecomb
+ - uni0308.001
+ - macronbelow
+ - uni030C.alt.001
+ - slashL_part.
+ - OSlash_part.
+ - .null
+ - uni0326.002
  - Bar_part.
  - uni030C.alt
- - ij_acutecomb
+ - ringcomba_part. 
  - g.ss02.alt
- - .null
- - ringacutecomb
- - OSlash_part.
- - uni0308.001
- - dotbelow
- - uni0326.002
- - commaturnedabove
- - slashL_part.
- - uni030C.alt.001
- - ringcomba_part.
- - slashl_part. 
- - macronbelow
  [code: unreachable-glyphs]
 
 </details>
@@ -634,26 +634,26 @@ substitution rules. Any glyphs not accessible by either of these means are
 redundant and serve only to increase the font&#x27;s file size.</pre>
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
- - circumflexbelow
- - oSlash_part.
- - IJ_acutecomb
+ - dotbelow
  - Barmid_part.
+ - ij_acutecomb
+ - IJ_acutecomb
+ - circumflexbelow
+ - slashl_part.
+ - commaturnedabove
+ - oSlash_part.
+ - ringacutecomb
+ - uni0308.001
+ - macronbelow
+ - uni030C.alt.001
+ - slashL_part.
+ - OSlash_part.
+ - .null
+ - uni0326.002
  - Bar_part.
  - uni030C.alt
- - ij_acutecomb
+ - ringcomba_part. 
  - g.ss02.alt
- - .null
- - ringacutecomb
- - OSlash_part.
- - uni0308.001
- - dotbelow
- - uni0326.002
- - commaturnedabove
- - slashL_part.
- - uni030C.alt.001
- - ringcomba_part.
- - slashl_part. 
- - macronbelow
  [code: unreachable-glyphs]
 
 </details>
@@ -765,13 +765,13 @@ lines.</pre>
  * Aogonek (U+0104): L<<1294.0,-223.0>--<1295.0,-368.0>>
  * Ccedilla (U+00C7): L<<625.0,-375.0>--<626.0,-226.0>>
  * Eogonek (U+0118): L<<1057.0,-223.0>--<1058.0,-368.0>>
- * G (U+0047): L<<1301.0,773.0>--<1300.0,167.0>>
- * Gbreve (U+011E): L<<1301.0,773.0>--<1300.0,167.0>>
- * Gcaron (U+01E6): L<<1301.0,773.0>--<1300.0,167.0>>
- * Gdotaccent (U+0120): L<<1301.0,773.0>--<1300.0,167.0>>
+ * G (U+0047): L<<1302.0,773.0>--<1300.0,167.0>>
+ * Gbreve (U+011E): L<<1302.0,773.0>--<1300.0,167.0>>
+ * Gcaron (U+01E6): L<<1302.0,773.0>--<1300.0,167.0>>
+ * Gdotaccent (U+0120): L<<1302.0,773.0>--<1300.0,167.0>>
  * Iogonek (U+012E): L<<392.0,-223.0>--<393.0,-368.0>>
  * R (U+0052): L<<576.0,1232.0>--<395.0,1233.0>>
- * Racute (U+0154): L<<576.0,1232.0>--<395.0,1233.0>> and 73 more. [code: found-semi-vertical]
+ * Racute (U+0154): L<<576.0,1232.0>--<395.0,1233.0>> and 72 more. [code: found-semi-vertical]
 
 </details>
 <br>
@@ -892,26 +892,26 @@ substitution rules. Any glyphs not accessible by either of these means are
 redundant and serve only to increase the font&#x27;s file size.</pre>
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
- - circumflexbelow
- - oSlash_part.
- - IJ_acutecomb
+ - dotbelow
  - Barmid_part.
+ - ij_acutecomb
+ - IJ_acutecomb
+ - circumflexbelow
+ - slashl_part.
+ - commaturnedabove
+ - oSlash_part.
+ - ringacutecomb
+ - uni0308.001
+ - macronbelow
+ - uni030C.alt.001
+ - slashL_part.
+ - OSlash_part.
+ - .null
+ - uni0326.002
  - Bar_part.
  - uni030C.alt
- - ij_acutecomb
+ - ringcomba_part. 
  - g.ss02.alt
- - .null
- - ringacutecomb
- - OSlash_part.
- - uni0308.001
- - dotbelow
- - uni0326.002
- - commaturnedabove
- - slashL_part.
- - uni030C.alt.001
- - ringcomba_part.
- - slashl_part. 
- - macronbelow
  [code: unreachable-glyphs]
 
 </details>
@@ -997,7 +997,7 @@ segments. As this check is liable to generate significant numbers of false
 positives, it will pass if there are more than 100 reported short segments.</pre>
 
 * ⚠ **WARN** The following glyphs have segments which seem very short:
-	* four (U+0034) contains a short segment L<<980.0,1454.0>--<975.0,1450.0>>
+	* four (U+0034) contains a short segment L<<920.0,1454.0>--<915.0,1450.0>>
 	* less (U+003C) contains a short segment L<<424.0,671.0>--<424.0,667.0>>
 	* greater (U+003E) contains a short segment L<<701.0,667.0>--<701.0,671.0>>
 	* at (U+0040) contains a short segment B<<1057.0,432.0>-<1062.0,469.0>-<1066.0,490.5>>
@@ -1174,26 +1174,26 @@ substitution rules. Any glyphs not accessible by either of these means are
 redundant and serve only to increase the font&#x27;s file size.</pre>
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
- - circumflexbelow
- - oSlash_part.
- - IJ_acutecomb
+ - dotbelow
  - Barmid_part.
+ - ij_acutecomb
+ - IJ_acutecomb
+ - circumflexbelow
+ - slashl_part.
+ - commaturnedabove
+ - oSlash_part.
+ - ringacutecomb
+ - uni0308.001
+ - macronbelow
+ - uni030C.alt.001
+ - slashL_part.
+ - OSlash_part.
+ - .null
+ - uni0326.002
  - Bar_part.
  - uni030C.alt
- - ij_acutecomb
+ - ringcomba_part. 
  - g.ss02.alt
- - .null
- - ringacutecomb
- - OSlash_part.
- - uni0308.001
- - dotbelow
- - uni0326.002
- - commaturnedabove
- - slashL_part.
- - uni030C.alt.001
- - ringcomba_part.
- - slashl_part. 
- - macronbelow
  [code: unreachable-glyphs]
 
 </details>
@@ -1251,7 +1251,7 @@ segments. As this check is liable to generate significant numbers of false
 positives, it will pass if there are more than 100 reported short segments.</pre>
 
 * ⚠ **WARN** The following glyphs have segments which seem very short:
-	* four (U+0034) contains a short segment L<<942.0,1454.0>--<938.0,1450.0>>
+	* four (U+0034) contains a short segment L<<907.0,1454.0>--<902.0,1450.0>>
 	* less (U+003C) contains a short segment L<<357.0,670.0>--<357.0,666.0>>
 	* greater (U+003E) contains a short segment L<<726.0,666.0>--<726.0,670.0>>
 	* at (U+0040) contains a short segment B<<1054.0,431.0>-<1059.0,468.0>-<1062.5,489.5>>
@@ -1302,12 +1302,12 @@ lines.</pre>
  * Ccedilla (U+00C7): L<<615.0,-393.0>--<616.0,-227.0>>
  * Eogonek (U+0118): L<<1062.0,-222.0>--<1063.0,-382.0>>
  * F (U+0046): L<<991.0,1454.0>--<993.0,1198.0>>
+ * G (U+0047): L<<1318.0,784.0>--<1317.0,174.0>>
+ * Gbreve (U+011E): L<<1318.0,784.0>--<1317.0,174.0>>
+ * Gcaron (U+01E6): L<<1318.0,784.0>--<1317.0,174.0>>
+ * Gdotaccent (U+0120): L<<1318.0,784.0>--<1317.0,174.0>>
  * Iogonek (U+012E): L<<422.0,-222.0>--<423.0,-382.0>>
- * R (U+0052): L<<596.0,1201.0>--<427.0,1202.0>>
- * Racute (U+0154): L<<596.0,1201.0>--<427.0,1202.0>>
- * Rcaron (U+0158): L<<596.0,1201.0>--<427.0,1202.0>>
- * Scedilla (U+015E): L<<488.0,-393.0>--<489.0,-227.0>>
- * Uogonek (U+0172): L<<871.0,-212.0>--<872.0,-372.0>> and 87 more. [code: found-semi-vertical]
+ * R (U+0052): L<<596.0,1201.0>--<427.0,1202.0>> and 92 more. [code: found-semi-vertical]
 
 </details>
 <br>

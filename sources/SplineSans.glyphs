@@ -84,7 +84,7 @@ Tag = wght;
 );
 }
 );
-date = "2021-11-22 17:22:33 +0000";
+date = "2022-04-14 17:23:15 +0000";
 designer = "Eben Sorkin, Mirko Velimirovic";
 familyName = "Spline Sans";
 featurePrefixes = (
@@ -72798,5 +72798,5 @@ tH = "256";
 };
 };
 versionMajor = 1;
-versionMinor = 0;
+versionMinor = 1;
 }
